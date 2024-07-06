@@ -21,6 +21,20 @@
 }
 
 
+/* Color variables */
+:root {
+    --primary: #68a55f;
+    --primary-alt: #3e5d3e;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --light-alt: #f3f6f4;
+    --dark: #101011;
+}
+
+
 /* To make forms' appearance consistent with rest of content across browsers */
 button,
 input,
@@ -74,16 +88,7 @@ h2, h3, h4, h5, h6 {
   font-family: 'quicksand-bold', sans-serif;
 }
 
-:root {
-    --primary: #007bff;
-    --secondary: #6c757d;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #101011;
-}
+
 
 body {
     background-color: var(--dark);
@@ -114,9 +119,6 @@ body {
 #dog-video {
     object-fit: cover;
 }
-.logo-band--img {
-    height: 256px;
-}
 .logo-band {
     width: 100%;
     position: relative;
@@ -125,17 +127,91 @@ body {
     color: var(--light);
 }
 
+
 .body-content--right {
     background-color: var(--light);
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 60%;
-    padding: 1rem;
+    padding: 0;
 }
-
+.logo-img {
+    height: 200px;
+}
 .body-content--right p {
     margin: 1em 0 2em 0;
-    width: 80%;
+    width: 70%;
     text-align: center;
+}
+
+
+form {
+    align-self: flex-start;
+    width: 90%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 1em 1em 0 1em;
+    font-size: 0.8em;
+    background-color: var(--light-alt);
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+}
+.form-fields {
+    display: flex;
+    flex-direction: column;
+}
+.field-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0.5em 0;
+}
+.field-row>div {
+    width: 40%;
+    margin: 0 0.5em;
+}
+label, button {
+    font-weight: bold;
+}
+input {
+    width: 100%;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+}
+.btn-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+    padding: 1em 1em 0 1em;
+}
+button {
+    background-color: var(--primary);
+    color: var(--light);
+    border: none;
+    border-radius: 5px;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+button:hover {
+    background-color: var(--primary-alt);
+    transform: scale(1.05);
+    box-shadow: 0 0 18px 4px rgba(0, 0, 0, 0.196);
+}
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.342);
+}
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: 250ms;
+}
+a:hover {
+    color: var(--dark);
 }
