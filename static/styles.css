@@ -78,18 +78,18 @@ html {
 }
 
 h1 {
-    font-family: 'indieflower', sans-serif;
+    font-family: 'quicksand-bold', sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: 'quicksand-bold', sans-serif;
+    font-family: 'quicksand-bold', sans-serif;
 }
 
 
-
+/* Page styles */
 body {
     background-color: var(--dark);
     padding: 0;
@@ -100,7 +100,6 @@ body {
     justify-content: center;
 }
 
-
 .body-content {
     height: 100%;
     width: 90%;
@@ -109,16 +108,19 @@ body {
     gap: 0;
 }
 
-
 .body-content--left {
     max-height: 100vh;
     overflow: hidden;
     width: 40%;
     display: block;
 }
+
 #dog-video {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
+
 .logo-band {
     width: 100%;
     position: relative;
@@ -126,7 +128,6 @@ body {
     background: rgba(28, 29, 29, 0.576);
     color: var(--light);
 }
-
 
 .body-content--right {
     background-color: var(--light);
@@ -136,9 +137,11 @@ body {
     width: 60%;
     padding: 0;
 }
+
 .logo-img {
     height: 200px;
 }
+
 .body-content--right p {
     margin: 1em 0 2em 0;
     width: 70%;
@@ -156,43 +159,66 @@ form {
     background-color: var(--light-alt);
     box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
 }
+
+legend {
+    font-family: 'quicksand-bold', sans-serif;
+    font-size: 1.3em;
+    color: var(--dark);
+    margin: 0.5em;
+    padding: 0;
+    position: relative;
+    left: 28px;
+}
+fieldset {
+    border: none;
+}
+
 .form-fields {
     display: flex;
     flex-direction: column;
 }
+
 .field-row {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 0.5em 0;
 }
+
 .field-row>div {
     width: 40%;
     margin: 0 0.5em;
 }
+
 label, button {
     font-weight: bold;
 }
+
 input {
     width: 100%;
     border: 1px solid var(--secondary);
     border-radius: 5px;
 }
+
 .unfilled:invalid{
     border: 1px solid var(--secondary);
 }
+
 .unfilled:invalid + span::before {
     content: " ";
 }
+
 
 input:focus {
     appearance: none;
     border: 2px solid var(--primary);
     outline: none;
 }
+
 input:invalid {
     border: 2px solid var(--danger);
 }
+
 input:focus:invalid {
     border: 2px solid var(--primary);
 }
@@ -235,12 +261,6 @@ input:valid + span::before {
 }
 
 
-
-
-
-
-
-
 .btn-box {
     width: 100%;
     display: flex;
@@ -250,6 +270,7 @@ input:valid + span::before {
     justify-content: center;
     padding: 1em 1em 0 1em;
 }
+
 button {
     background-color: var(--primary);
     color: var(--light);
@@ -266,15 +287,18 @@ button:hover {
     transform: scale(1.05);
     box-shadow: 0 0 18px 4px rgba(0, 0, 0, 0.196);
 }
+
 button:active {
     transform: scale(0.95);
     box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.342);
 }
+
 a {
     color: var(--primary);
     text-decoration: none;
     transition: 250ms;
 }
+
 a:hover {
     color: var(--dark);
 }
