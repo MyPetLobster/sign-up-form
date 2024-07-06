@@ -65,6 +65,9 @@ html {
 
 h1 {
     font-family: 'indieflower', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 h2, h3, h4, h5, h6 {
@@ -84,8 +87,42 @@ h2, h3, h4, h5, h6 {
 
 body {
     background-color: var(--light);
-    padding: 1rem;
+    padding: 0;
     margin: 0;
 }
 
 
+.body-content {
+    display: flex;
+}
+
+.logo-band--img {
+    height: 256px;
+}
+.logo-band {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    position: absolute;
+    top: 80%;
+    background: rgba(28, 29, 29, 0.576);
+    color: var(--light);
+}
+
+#dog-video {
+    width: 100%;
+}
+.body-content--left {
+    width: 40%;
+}
+
+.body-content--right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    padding: 1rem;
+
+}
