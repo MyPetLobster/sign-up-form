@@ -83,6 +83,9 @@ h1 {
     margin: 0;
     padding: 0;
 }
+h2 {
+    text-align: center;
+}
 
 h2, h3, h4, h5, h6 {
     font-family: 'quicksand-bold', sans-serif;
@@ -301,4 +304,62 @@ a {
 
 a:hover {
     color: var(--dark);
+}
+
+
+@media screen and (max-width: 1028px) {
+    body {
+        font-size: 14px;
+    }
+    .body-content--left {
+        width: 50%;
+    }
+    .body-content--right {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+    .body-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .body-content--left {
+        width: 100%;
+        height: 30vh;
+    }
+    #dog-video {
+        object-position: 50% 30%;
+    }
+    .body-content--right {
+        height: 70vh;
+        width: 100%;
+    }
+    .logo-img {
+        height: 100px;
+    }
+    .body-content--right p {
+        width: 90%;
+    }
+
+    form {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .field-row {
+        flex-direction: column;
+    }
+
+    .field-row>div {
+        width: 100%;
+    }
+
+    .btn-box {
+        width: 100%;
+    }
 }
