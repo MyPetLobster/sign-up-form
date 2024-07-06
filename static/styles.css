@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'quicksand-regular';
+    src: url('../fonts/quicksand-regular-webfont.woff2') format('woff2'),
+         url('../fonts/quicksand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'quicksand-bold';
+    src: url('../fonts/quicksand-bold-webfont.woff2') format('woff2'),
+         url('../fonts/quicksand-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'indieflower';
+    src: url('../fonts/indieflower-regular-webfont.woff2') format('woff2'),
+         url('../fonts/indieflower-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* To make forms' appearance consistent with rest of content across browsers */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+/* Reset some styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+
+/* Universal styles */
+html {
+  font-size: 16px;
+  font-family: 'quicksand-regular', sans-serif;
+  color: #333;
+}
+
+h1 {
+    font-family: 'indieflower', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'quicksand-bold', sans-serif;
+}
+
+:root {
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+body {
+    background-color: var(--light);
+    padding: 1rem;
+    margin: 0;
+}
+
+
