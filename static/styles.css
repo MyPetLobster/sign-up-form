@@ -82,47 +82,60 @@ h2, h3, h4, h5, h6 {
     --warning: #ffc107;
     --danger: #dc3545;
     --light: #f8f9fa;
-    --dark: #343a40;
+    --dark: #101011;
 }
 
 body {
-    background-color: var(--light);
+    background-color: var(--dark);
     padding: 0;
     margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
 }
 
 
 .body-content {
+    height: 100%;
+    width: 90%;
     display: flex;
+    justify-content: center;
+    gap: 0;
 }
 
+
+.body-content--left {
+    max-height: 100vh;
+    overflow: hidden;
+    width: 40%;
+    display: block;
+}
+#dog-video {
+    object-fit: cover;
+}
 .logo-band--img {
     height: 256px;
 }
 .logo-band {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    position: absolute;
-    top: 80%;
+    width: 100%;
+    position: relative;
+    bottom: 50%;
     background: rgba(28, 29, 29, 0.576);
     color: var(--light);
 }
 
-#dog-video {
-    width: 100%;
-}
-.body-content--left {
-    width: 40%;
-}
-
 .body-content--right {
+    background-color: var(--light);
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 60%;
     padding: 1rem;
+}
 
+.body-content--right p {
+    margin: 1em 0 2em 0;
+    width: 80%;
+    text-align: center;
 }
