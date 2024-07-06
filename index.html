@@ -77,6 +77,15 @@
                 inputField.classList.remove('unfilled');
             });
         }); 
+
+        // If input is empty when it loses focus, add unfilled class
+        inputFields.forEach(inputField => {
+            inputField.addEventListener('blur', () => {
+                if (inputField.value === '') {
+                    inputField.classList.add('unfilled');
+                }
+            });
+        });
     </script>
 </body>
 </html>
